@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LLB FRIEND Bare Acts Library - Access important Indian Bare Acts and legislation.">
+    <title>Bare Acts | LLB FRIEND</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">⚖</span>
+            <span>LLB <strong>FRIEND</strong></span>
+        </a>
+
+        <span class="top-label">YOUR LAW STUDY COMPANION</span>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">LAW RESOURCE LIBRARY</span>
+                <h1>Bare Acts <span>Library</span></h1>
+                <p>
+                    Explore important Indian laws and legislation in one place.
+                    Read, study and download your Bare Acts.
+                </p>
+                <a href="#library" class="hero-button">Explore Bare Acts <span>→</span></a>
+            </div>
+
+            <div class="hero-symbol">§</div>
+        </section>
+
+        <section class="library-section" id="library">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">STUDY MATERIALS</span>
+                    <h2>Available Bare Acts</h2>
+                    <p>Find the legislation you are looking for.</p>
+                </div>
+
+                <div class="count-box">
+                    <span id="resourceCount">Checking...</span>
+                    <small>Available PDFs</small>
+                </div>
+            </div>
+
+            <div class="search-area">
+                <span class="search-icon">⌕</span>
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search Bare Acts by name..."
+                    aria-label="Search Bare Acts"
+                >
+                <button id="clearSearch" type="button">Clear</button>
+            </div>
+
+            <div class="filter-list" id="filterList">
+                <button class="filter-btn active" data-filter="All">All Acts</button>
+                <button class="filter-btn" data-filter="Criminal Law">Criminal Law</button>
+                <button class="filter-btn" data-filter="Constitutional Law">Constitutional Law</button>
+                <button class="filter-btn" data-filter="Civil Law">Civil Law</button>
+                <button class="filter-btn" data-filter="Commercial Law">Commercial Law</button>
+                <button class="filter-btn" data-filter="Other Laws">Other Laws</button>
+            </div>
+
+            <div class="status-message" id="statusMessage">
+                Checking PDF availability...
+            </div>
+
+            <div class="resource-grid" id="resourceList"></div>
+
+            <div class="empty-message" id="emptyMessage" hidden>
+                <div class="empty-icon">📚</div>
+                <h3>No records found</h3>
+                <p>Try another search term or select a different category.</p>
+            </div>
+        </section>
+
+        <section class="info-banner">
+            <div class="info-icon">⚖</div>
+            <div>
+                <h3>Learn the Law. Understand Your Rights.</h3>
+                <p>Use these resources for academic study and legal learning.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-brand">LLB FRIEND</div>
+        <p>Your Law Study Companion</p>
+        <p class="copyright">© 2026 LLB FRIEND. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
